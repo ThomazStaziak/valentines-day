@@ -969,11 +969,7 @@
       </div>
       <div class="demo-footer">
         Faltam <strong><span id="days"></span> dias</strong> para a realização
-        do nosso sonho ❤️
-      </div>
-      <div class="demo-footer">
-        Faltam <strong><span id="days-beach"></span> dias</strong> para a realização
-        do nosso sonho praiano ❤️
+        do nosso sonho e <strong><span id="days-beach"></span> dias</strong> para nosso sonho praiano ❤️
       </div>
     </div>
     <script>
@@ -985,9 +981,9 @@
 
       const nowBeach = new Date("2024-11-01");
       const pastBeach = new Date();
-      const diffBeach = Math.abs(now.getTime() - past.getTime());
-      const daysBeach = Math.ceil(diff / (1000 * 60 * 60 * 24));
-      const daysHTMLBeach = (document.getElementById("days-beach").innerHTML = days);
+      const diffBeach = Math.abs(nowBeach.getTime() - pastBeach.getTime());
+      const daysBeach = Math.ceil(diffBeach / (1000 * 60 * 60 * 24));
+      const daysHTMLBeach = (document.getElementById("days-beach").innerHTML = daysBeach);
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
